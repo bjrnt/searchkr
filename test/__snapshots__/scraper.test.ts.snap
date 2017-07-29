@@ -1,0 +1,391 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Scraper when searching for an English word matches the snapshot 1`] = `
+Array [
+  Object {
+    "hanja": null,
+    "meanings": Array [
+      Object {
+        "en": "The narrow part of the human or animal body that connects the head and the torso.",
+        "kr": "사람이나 동물의 머리와 몸통을 잇는 잘록한 부분.",
+        "translation": "1. neck",
+      },
+      Object {
+        "en": "A deep opening inside the neck that leads to other parts inside the body.",
+        "kr": "목 안쪽에서 몸속으로 나 있는 깊숙한 구멍.",
+        "translation": "2. throat",
+      },
+      Object {
+        "en": "The sound that comes out of the throat.",
+        "kr": "목을 통해 나오는 소리.",
+        "translation": "3. voice; throat",
+      },
+      Object {
+        "en": "The part of an object that looks similar to the neck of an animal.",
+        "kr": "어떤 물건에서 동물의 목과 비슷한 부분.",
+        "translation": "4. neck",
+      },
+      Object {
+        "en": "A place or street that is in a good location for business.",
+        "kr": "자리가 좋아 장사가 잘되는 곳이나 길.",
+        "translation": "5. location",
+      },
+      Object {
+        "en": "A narrow, important route or path for escape to which there is no alternative.",
+        "kr": "길이나 통로에서 다른 곳으로는 빠져나갈 수 없는 중요하고 좁은 곳.",
+        "translation": "6. strategic location",
+      },
+    ],
+    "type": "명사 Noun",
+    "word": "목",
+  },
+  Object {
+    "hanja": null,
+    "meanings": Array [
+      Object {
+        "en": "A deep opening inside the neck that leads to other inside parts of the body.",
+        "kr": "목 안쪽에서 몸속으로 나 있는 깊숙한 구멍.",
+        "translation": "throat",
+      },
+    ],
+    "type": "명사 Noun",
+    "word": "목구멍",
+  },
+  Object {
+    "hanja": null,
+    "meanings": Array [
+      Object {
+        "en": "The front part of the neck.",
+        "kr": "목의 앞쪽.",
+        "translation": "throat",
+      },
+    ],
+    "type": "명사 Noun",
+    "word": "멱",
+  },
+  Object {
+    "hanja": null,
+    "meanings": Array [
+      Object {
+        "en": "An organ in the center of the throat that is used to produce sound.",
+        "kr": "목구멍 가운데에 있는, 소리를 내는 기관.",
+        "translation": "1. throat; voice; vocal cords",
+      },
+      Object {
+        "en": "The sound resonating out of the throat.",
+        "kr": "목에서 울려 나오는 소리.",
+        "translation": "2. voice",
+      },
+    ],
+    "type": "명사 Noun",
+    "word": "목청",
+  },
+  Object {
+    "hanja": null,
+    "meanings": Array [
+      Object {
+        "en": "To throw away the unnecessary parts and mend something so that it can be used.",
+        "kr": "사용할 수 있도록 필요 없는 부분을 버리고 손질하다.",
+        "translation": "1. mend; trim",
+      },
+      Object {
+        "en": "To mend something so that it looks stylish.",
+        "kr": "맵시가 나도록 고른 상태로 손질하다.",
+        "translation": "2. mend; trim",
+      },
+      Object {
+        "en": "To fix a piece of writing, sentence, etc., in a correct, complete manner.",
+        "kr": "글이나 문장 등을 바르고 짜임새 있게 고치다.",
+        "translation": "3. fix",
+      },
+      Object {
+        "en": "To make one's voice not hoarse in order to speak clearly.",
+        "kr": "잘 나오도록 소리를 고르게 하다.",
+        "translation": "4. clear one's throat",
+      },
+      Object {
+        "en": "To even a surface, etc.",
+        "kr": "표면 등을 고르게 손질하다.",
+        "translation": "5. mend; trim",
+      },
+    ],
+    "type": "동사 Verb",
+    "word": "다듬다",
+  },
+  Object {
+    "hanja": "목感氣",
+    "meanings": Array [
+      Object {
+        "en": "A cold that has the symptoms of a swollen throat, as well as stinging and pain in the throat.",
+        "kr": "목이 부으며 목 안이 따갑고 아픈 증상의 감기.",
+        "translation": "sore throat",
+      },
+    ],
+    "type": "명사 Noun",
+    "word": "목감기",
+  },
+  Object {
+    "hanja": null,
+    "meanings": Array [
+      Object {
+        "en": "A sound made by blocking or rubbing the vocal cords.",
+        "kr": "성대를 막거나 마찰하여 내는 소리.",
+        "translation": "throat sound",
+      },
+    ],
+    "type": "명사 Noun",
+    "word": "목구멍소리",
+  },
+  Object {
+    "hanja": null,
+    "meanings": Array [
+      Object {
+        "en": "An act of making a coughing sound intentionally to show one's dignity or to calm oneself down, or such a sound.",
+        "kr": "위엄을 나타내거나 마음을 가다듬기 위해 큰 소리로 기침함. 또는 그런 기침.",
+        "translation": "clearing one's throat; ahem",
+      },
+    ],
+    "type": "명사 Noun",
+    "word": "큰기침",
+  },
+  Object {
+    "hanja": null,
+    "meanings": Array [
+      Object {
+        "en": "An act of making a coughing sound intentionally to indicate one's presence or to clear one's throat; or such a cough. ",
+        "kr": "사람이 있다는 것을 알리거나 목청을 가다듬기 위해 일부러 기침함. 또는 그렇게 하는 기침.",
+        "translation": "clearing one's throat; hem",
+      },
+    ],
+    "type": "명사 Noun",
+    "word": "헛기침",
+  },
+  Object {
+    "hanja": null,
+    "meanings": Array [
+      Object {
+        "en": "To make a coughing sound intentionally to indicate one's presence or to clear one's throat.",
+        "kr": "사람이 있다는 것을 알리거나 목청을 가다듬기 위해 일부러 기침하다.",
+        "translation": "clear one's throat; hem",
+      },
+    ],
+    "type": "동사 Verb",
+    "word": "헛기침하다",
+  },
+]
+`;
+
+exports[`Scraper when there are hanja matches the snapshot 1`] = `
+Array [
+  Object {
+    "hanja": "漢字",
+    "meanings": Array [
+      Object {
+        "en": "Chinese unique characters created in China and being used today in the country. ",
+        "kr": "중국에서 만들어 오늘날에도 쓰고 있는 중국 고유의 문자.",
+        "translation": "Chinese characters",
+      },
+    ],
+    "type": "명사 Noun",
+    "word": "한자",
+  },
+  Object {
+    "hanja": null,
+    "meanings": Array [
+      Object {
+        "en": "The same place.",
+        "kr": "같은 자리.",
+        "translation": "1. same place; same seat; one place",
+      },
+      Object {
+        "en": "An important or high-ranking position; or a certain position.",
+        "kr": "중요하거나 높은 직위. 또는 어느 한 직위.",
+        "translation": "2. high post; important position; one position",
+      },
+    ],
+    "type": "명사 Noun",
+    "word": "한자리",
+  },
+  Object {
+    "hanja": null,
+    "meanings": Array [
+      Object {
+        "en": "To attain an important or high-ranking position. ",
+        "kr": "중요하거나 높은 직위에 오르다.",
+        "translation": "rise to a high rank",
+      },
+    ],
+    "type": "동사 Verb",
+    "word": "한자리하다",
+  },
+  Object {
+    "hanja": "漢字音",
+    "meanings": Array [
+      Object {
+        "en": "The pronunciation or sound of Chinese characters.",
+        "kr": "한자의 발음이나 소리.",
+        "translation": "sound of Chinese characters",
+      },
+    ],
+    "type": "명사 Noun",
+    "word": "한자음",
+  },
+]
+`;
+
+exports[`Scraper when there are multiple meanings matches the snapshot 1`] = `
+Array [
+  Object {
+    "hanja": null,
+    "meanings": Array [
+      Object {
+        "en": "The star at the center of a solar system which is extremely hot and emits light.",
+        "kr": "태양계의 중심에 있으며 온도가 매우 높고 스스로 빛을 내는 항성.",
+        "translation": "1. sun",
+      },
+      Object {
+        "en": "The time during which the earth rotates around the sun once.",
+        "kr": "지구가 태양을 한 바퀴 도는 동안.",
+        "translation": "2. year",
+      },
+      Object {
+        "en": "The time between sunrise and sunset.",
+        "kr": "해가 떠서 질 때까지의 동안.",
+        "translation": "3. day",
+      },
+    ],
+    "type": "명사 Noun",
+    "word": "해",
+  },
+  Object {
+    "hanja": null,
+    "meanings": Array [
+      Object {
+        "en": "A bound noun that serves as a unit for counting the number of the earth's revolutions around the sun.",
+        "kr": "지구가 태양을 한 바퀴 도는 동안을 세는 단위.",
+        "translation": "hae",
+      },
+    ],
+    "type": "의존 명사 Bound Noun",
+    "word": "해",
+  },
+  Object {
+    "hanja": "害",
+    "meanings": Array [
+      Object {
+        "en": "An act of doing something unhelpful or harmful; or such a thing. ",
+        "kr": "이롭지 않게 하거나 손상을 입힘. 또는 그런 것.",
+        "translation": "harm; damage",
+      },
+    ],
+    "type": "명사 Noun",
+    "word": "해",
+  },
+  Object {
+    "hanja": null,
+    "meanings": Array [
+      Object {
+        "en": "",
+        "kr": "",
+        "translation": "",
+      },
+    ],
+    "type": "",
+    "word": "해-",
+  },
+  Object {
+    "hanja": null,
+    "meanings": Array [
+      Object {
+        "en": "",
+        "kr": "",
+        "translation": "",
+      },
+    ],
+    "type": "",
+    "word": "해-",
+  },
+  Object {
+    "hanja": null,
+    "meanings": Array [
+      Object {
+        "en": "A prefix used to mean \\"freshly harvested or newly born that year.\\"",
+        "kr": "‘그 해에 난’의 뜻을 더하는 접두사.",
+        "translation": "hae-",
+      },
+    ],
+    "type": "접사 Affix",
+    "word": "해-",
+  },
+  Object {
+    "hanja": "海",
+    "meanings": Array [
+      Object {
+        "en": "A suffix used to mean an ocean.",
+        "kr": "‘바다’의 뜻을 더하는 접미사.",
+        "translation": "-hae",
+      },
+    ],
+    "type": "접사 Affix",
+    "word": "-해",
+  },
+  Object {
+    "hanja": null,
+    "meanings": Array [
+      Object {
+        "en": "Each and every year. ",
+        "kr": "각각의 해에 모두.",
+        "translation": "every year; each year",
+      },
+    ],
+    "type": "부사 Adverb",
+    "word": "해마다",
+  },
+  Object {
+    "hanja": "海外",
+    "meanings": Array [
+      Object {
+        "en": "A country other than one's own. ",
+        "kr": "자기 나라가 아닌 다른 나라.",
+        "translation": "foreign country; overseas",
+      },
+    ],
+    "type": "명사 Noun",
+    "word": "해외",
+  },
+  Object {
+    "hanja": "海外旅行",
+    "meanings": Array [
+      Object {
+        "en": "A trip to overseas destinations, or such a trip. ",
+        "kr": "외국으로 여행을 가는 일. 또는 그런 여행.",
+        "translation": "overseas travel; trip abroad",
+      },
+    ],
+    "type": "명사 Noun",
+    "word": "해외여행",
+  },
+]
+`;
+
+exports[`Scraper when there is only one result matches the snapshot 1`] = `
+Array [
+  Object {
+    "hanja": null,
+    "meanings": Array [
+      Object {
+        "en": "To cover or hide something so it cannot be seen and found.",
+        "kr": "보거나 찾지 못하도록 가리거나 숨기다.",
+        "translation": "1. hide; cover; conceal",
+      },
+      Object {
+        "en": "To keep a certain fact or emotion secret from someone.",
+        "kr": "어떤 사실이나 감정을 남이 모르도록 알리지 않고 비밀로 하다.",
+        "translation": "2. hide; conceal",
+      },
+    ],
+    "type": "동사 Verb",
+    "word": "감추다",
+  },
+]
+`;
