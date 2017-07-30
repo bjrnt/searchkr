@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-export default (term: string): Promise<string> =>
+export default (term: string, maxNumHits: number = 10): Promise<string> =>
   axios
     .get('https://krdict.korean.go.kr/eng/dicSearch/search', {
       params: {
@@ -9,6 +9,7 @@ export default (term: string): Promise<string> =>
         nation: 'eng',
         wordMatchFlag: 'N',
         mainSearchWord: term,
+        blockCount: maxNumHits
       },
     })
     .then(response => {

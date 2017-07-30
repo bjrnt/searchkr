@@ -20,8 +20,9 @@ const prettyPrint = (hits: Match[]) => {
 commander
     .arguments('<search term>')
     .option('--json', 'Print output as JSON')
+    .option('-h, --maxHits [number of hits]', 'The number of hits to retrieve, default is 5', 5)
     .action(searchTerm => {
-        search(searchTerm).then(scrape).then(hits => {
+        search(searchTerm, commander.maxHits).then(scrape).then(hits => {
             if (commander.json) {
                 console.log(JSON.stringify(hits))
             } else {
