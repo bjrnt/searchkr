@@ -1,34 +1,37 @@
 {
   "name": "@bjrnt/searchkr",
-  "version": "0.1.0",
-  "main": "index.js",
+  "version": "0.1.1",
   "license": "MIT",
+  "author": "Bjorn Tegelund",
   "bin": {
     "searchkr": "./dist/cli.js"
   },
   "scripts": {
-    "install": "tsc",
+    "prepublishOnly": "tsc",
+    "build": "tsc",
     "test": "jest"
   },
+  "keywords": ["korean"],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "dependencies": {
+    "axios": "^0.16.2",
+    "chalk": "^2.0.1",
+    "cheerio": "^1.0.0-rc.2",
+    "commander": "^2.11.0"
+  },
+  "devDependencies": {
+    "jest": "^20.0.4",
+    "ts-jest": "^20.0.7",
+    "typescript": "^2.4.2",
     "@types/chalk": "^0.4.31",
     "@types/cheerio": "^0.22.2",
     "@types/commander": "^2.9.1",
     "@types/jest": "^20.0.5",
-    "@types/node": "^8.0.17",
-    "axios": "^0.16.2",
-    "chalk": "^2.0.1",
-    "cheerio": "^1.0.0-rc.2",
-    "commander": "^2.11.0",
-    "jest": "^20.0.4",
-    "ts-jest": "^20.0.7",
-    "typescript": "^2.4.2"
+    "@types/node": "^8.0.17"
   },
   "jest": {
-    "moduleFileExtensions": [
-      "ts",
-      "js"
-    ],
+    "moduleFileExtensions": ["ts", "js"],
     "transform": {
       "\\.ts$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },

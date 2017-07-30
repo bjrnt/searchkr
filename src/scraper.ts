@@ -7,7 +7,7 @@ export interface Match {
     meanings: Meaning[]
 }
 
-interface Meaning {
+export interface Meaning {
     translation: string,
     en: string,
     kr: string
