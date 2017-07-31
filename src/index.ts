@@ -1,4 +1,4 @@
 import search from './searcher'
-import scrape, {Match} from './scraper'
+import scrape, {Result} from './scraper'
 
-export default (term: string): Promise<Match[]> => search(term).then(scrape)
+export default (term: string): Promise<Result[]> => search(term).then(scrape)

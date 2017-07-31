@@ -1,6 +1,6 @@
 import * as cheerio from 'cheerio'
 
-export interface Match {
+export interface Result {
     word: string,
     hanja: string | null,
     type: string,
@@ -30,18 +30,18 @@ const getTrans = ($: Cheerio): string => $.find('p.manyLang6').first().text().re
 const getKr = ($: Cheerio): string => $.find('p.sub_p1').first().text()
 const getEn = ($: Cheerio): string => $.find('p.sub_p1.manyLang6').first().text()
 
-export default function scrape(body: string): Match[] {
+export default function scrape(body: string): Result[] {
     const $ = cheerio.load(body, {
         normalizeWhitespace: true
     })
-    const hits = $('ul.search_list').children().toArray()
-    // No hits
-    if($(hits[0]).text().match('No result')) {
+    const results = $('ul.search_list').children().toArray()
+    // No search results
+    if($(results[0]).text().match('No result')) {
         return []
     }
     // At least one hit
-    return hits.map(hit => {
-        const elem = $(hit)
+    return results.map(result => {
+        const elem = $(result)
         const word = getWord(elem)
         const type = getType(elem)
         const hanja = getHanja(elem)

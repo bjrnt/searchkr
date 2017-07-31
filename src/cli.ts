@@ -2,13 +2,13 @@
 import * as commander from 'commander'
 import * as chalk from 'chalk'
 import search from './searcher'
-import scrape, {Match} from './scraper'
+import scrape, {Result} from './scraper'
 
-const prettyPrint = (hits: Match[]) => {
+const prettyPrint = (results: Result[]) => {
     console.log('\n')
-    hits.forEach(hit => {
-        console.log(chalk.green(hit.word), hit.hanja || '', chalk.gray(hit.type))
-        hit.meanings.forEach(meaning => {
+    results.forEach(result => {
+        console.log(chalk.green(result.word), result.hanja || '', chalk.gray(result.type))
+        result.meanings.forEach(meaning => {
             console.log('  ', chalk.underline(meaning.translation))
             console.log('  ', chalk.italic(meaning.kr))
             console.log('  ', chalk.italic(meaning.en))
@@ -20,13 +20,13 @@ const prettyPrint = (hits: Match[]) => {
 commander
     .arguments('<search term>')
     .option('--json', 'Print output as JSON')
-    .option('-h, --maxHits [number of hits]', 'The number of hits to retrieve, default is 5', 5)
+    .option('-r, --maxResults [number of results]', 'The maximum number of results to retrieve, default is 5', 5)
     .action(searchTerm => {
-        search(searchTerm, commander.maxHits).then(scrape).then(hits => {
+        search(searchTerm, commander.maxResults).then(scrape).then(results => {
             if (commander.json) {
-                console.log(JSON.stringify(hits))
+                console.log(JSON.stringify(results))
             } else {
-                prettyPrint(hits)
+                prettyPrint(results)
             }
         })
     })
