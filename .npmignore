@@ -1,6 +1,8 @@
 # Typescript Source files
 src
 test
+tsconfig.json
+.vscode
 
 # Logs
 logs
