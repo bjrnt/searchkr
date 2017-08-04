@@ -1,4 +1,7 @@
 import * as cheerio from 'cheerio'
+import * as makeDebug from 'debug'
+
+const debug = makeDebug('searchkr:scraper')
 
 export interface Result {
     word: string,
@@ -31,12 +34,14 @@ const getKr = ($: Cheerio): string => $.find('p.sub_p1').first().text()
 const getEn = ($: Cheerio): string => $.find('p.sub_p1.manyLang6').first().text()
 
 export default function scrape(body: string): Result[] {
+    debug('Parsing body')
     const $ = cheerio.load(body, {
         normalizeWhitespace: true
     })
     const results = $('ul.search_list').children().toArray()
     // No search results
     if($(results[0]).text().match('No result')) {
+        debug('No results found')
         return []
     }
     // At least one hit
@@ -51,6 +56,8 @@ export default function scrape(body: string): Result[] {
             en: getEn($(e))
         }))
 
-        return { word, type, hanja, meanings }
+        const res = { word, type, hanja, meanings }
+        debug(`Scraped result ${JSON.stringify(res)}`)
+        return res
     })
 }
