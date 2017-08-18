@@ -29,7 +29,7 @@ const getHanja = ($: Cheerio): string | null => {
     }
     return null
 }
-const getTrans = ($: Cheerio): string => $.find('p.manyLang6').first().text().replace(/[\t\n ]+/g, ' ').trim()
+const getTrans = ($: Cheerio): string => $.find('p.manyLang6').first().text().replace(/[\t\n ]+/g, ' ').replace(/[0-9]+\./, '').trim()
 const getKr = ($: Cheerio): string => $.find('p.sub_p1').first().text()
 const getEn = ($: Cheerio): string => $.find('p.sub_p1.manyLang6').first().text()
 

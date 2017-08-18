@@ -50,6 +50,13 @@ describe('Scraper', () => {
             expect(scrape(multipleMeaningBody)[0].meanings.length).toEqual(3)
         })
 
+        it('does not return numbers in the meanings', () => {
+            const result = scrape(multipleMeaningBody)[0]
+            result.meanings.forEach(meaning => {
+                expect(meaning.translation).not.toMatch(/[0-9]+\. /)
+            })
+        });
+
         it('matches the snapshot', () => {
             expect(scrape(multipleMeaningBody)).toMatchSnapshot()
         })
