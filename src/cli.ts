@@ -8,8 +8,9 @@ const prettyPrint = (results: Result[]) => {
     console.log('\n')
     results.forEach(result => {
         console.log(chalk.green(result.word), result.hanja || '', chalk.gray(result.type))
-        result.meanings.forEach(meaning => {
-            console.log('  ', chalk.underline(meaning.translation))
+        const hasMultipleMeanings = result.meanings.length > 1
+        result.meanings.forEach((meaning, index) => {
+            console.log('  ', chalk.underline(hasMultipleMeanings ? `${index + 1}. ${meaning.translation}` : meaning.translation))
             console.log('  ', chalk.italic(meaning.kr))
             console.log('  ', chalk.italic(meaning.en))
         })
