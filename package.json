@@ -1,10 +1,10 @@
 {
-  "name": "@bjrnt/searchkr",
-  "version": "0.1.7",
+  "name": "@bjrnt/seonbi-core",
+  "version": "0.1.8",
   "license": "MIT",
   "author": "Bjorn Tegelund",
   "bin": {
-    "searchkr": "./dist/cli.js"
+    "seonbi": "./dist/cli.js"
   },
   "scripts": {
     "prepublishOnly": "tsc",

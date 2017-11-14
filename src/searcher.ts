@@ -1,7 +1,7 @@
 import axios from 'axios'
 import * as makeDebug from 'debug'
 
-const debug = makeDebug('searchkr:searcher')
+const debug = makeDebug('seonbi-core:searcher')
 export default (term: string, maxNumHits: number = 10): Promise<string> => {
   debug(`Querying for ${term}`)
   return axios
@@ -12,7 +12,7 @@ export default (term: string, maxNumHits: number = 10): Promise<string> => {
         nation: 'eng',
         wordMatchFlag: 'N',
         mainSearchWord: term,
-        blockCount: maxNumHits
+        blockCount: maxNumHits,
       },
     })
     .then(response => {
