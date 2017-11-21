@@ -1,10 +1,11 @@
 import scrape from '../src/scraper'
-import fs from 'fs'
-import hanjaBody from './test-pages/hanja'
-import noResultsBody from './test-pages/no-results'
-import oneResultBody from './test-pages/one-result'
-import englishResultBody from './test-pages/english'
-import multipleMeaningBody from './test-pages/multiple-meanings'
+import * as fs from 'fs'
+
+const hanjaBody = fs.readFileSync('test/test-pages/hanja.txt').toString()
+const noResultsBody = fs.readFileSync('test/test-pages/no-results.txt').toString()
+const oneResultBody = fs.readFileSync('test/test-pages/one-result.txt').toString()
+const englishResultBody = fs.readFileSync('test/test-pages/english.txt').toString()
+const multipleMeaningBody = fs.readFileSync('test/test-pages/multiple-meanings.txt').toString()
 
 describe('Scraper', () => {
   describe('when there are no matches', () => {

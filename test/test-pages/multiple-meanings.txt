@@ -1,4 +1,3 @@
-export default `
 
 
 
@@ -2563,4 +2562,3 @@ $(function() {
 <!-- END OF LOGGER TRACKING SCRIPT -->
 </body>
 </html>
-`

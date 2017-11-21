@@ -1,4 +1,3 @@
-export default `
 
 
 
@@ -781,13 +780,13 @@ $(document).ready(function() {
 	//내가 살펴본 단어 목록
 	fnMyViewWordList();
 
-	if(fnKoreanCompare('no results')){
+	if(fnKoreanCompare('감추다')){
 		$(".checkKeyword").addClass("koreaLang");
 	}else{
 		$(".checkKeyword").addClass("manyLang6");
 	}
 
-	$("#mainSearchWord").val('no results');
+	$("#mainSearchWord").val('감추다');
 
     $("#mainSearchWord").bind("focus", function(event) {
     	$("#mainSearchWord").select();
@@ -1500,7 +1499,7 @@ function fnFontChange(){
 	<div id="container">
 		<form name="searchResultForm" method="get">
 	        <input type="hidden" name="wordMatchFlag" 	id="wordMatchFlag" 		value="N"	/>
-	        <input type="hidden" name="mainSearchWord" 	value="no results" 	/>
+	        <input type="hidden" name="mainSearchWord" 	value="감추다" 	/>
 	        <input type="hidden" name="currentPage" 	id="currentPage" 		value="1" 		/>
 	        <input type="hidden" name="sort" 			id="sort" 				value="W" 			/>
 	        <input type="hidden" name="searchType" 		id="searchType" 		value="W" 		/>
@@ -1523,10 +1522,10 @@ function fnFontChange(){
 
 
                 		<ul class="tab_win manyLang6">
-	                        <li class="wfix"><a style="width:150px;" href="#" class="tab_tit    on" id="tab_01" onclick="fnSearch('W');">Word <font style="font-size:13px;">(0)</font></a></li>
-	                        <li class="wfix"><a style="width:200px;" href="#" class="tab_tit	" id="tab_02" onclick="fnSearch('P');">Idioms·Proverbs <font style="font-size:13px;">(0)</font></a></li>
-	                        <li class="wfix"><a 					 href="#" class="tab_tit	" id="tab_03" onclick="fnSearch('S');">Definition <font style="font-size:13px;">(0)</font></a></li>
-	                        <li class="wfix"><a style="width:200px;" href="#" class="tab_tit	" id="tab_04" onclick="fnSearch('E');">Usage Example <font style="font-size:13px;">(0)</font></a></li>
+	                        <li class="wfix"><a style="width:150px;" href="#" class="tab_tit    on" id="tab_01" onclick="fnSearch('W');">Word <font style="font-size:13px;">(1)</font></a></li>
+	                        <li class="wfix"><a style="width:200px;" href="#" class="tab_tit	" id="tab_02" onclick="fnSearch('P');">Idioms·Proverbs <font style="font-size:13px;">(3)</font></a></li>
+	                        <li class="wfix"><a 					 href="#" class="tab_tit	" id="tab_03" onclick="fnSearch('S');">Definition <font style="font-size:13px;">(14)</font></a></li>
+	                        <li class="wfix"><a style="width:200px;" href="#" class="tab_tit	" id="tab_04" onclick="fnSearch('E');">Usage Example <font style="font-size:13px;">(73)</font></a></li>
                     	</ul>
 
 
@@ -1538,17 +1537,195 @@ function fnFontChange(){
                 	<!--// tab end -->
 	                <div class="floatL sub_left sub_left_box">
 
+	                    <div class="keyboardLayerPosition search_tit manyLang6 transFont6" style="width: 100%">
+
+	                    	View search results for
+
+
+
+
+	                        <strong class="checkKeyword keywordFont6">'감추다'</strong>
+
+	                        among headwords.
+
+
+	                    	<span>(</span><span class="num_red">1 </span><span>results)</span>
+
+
+
+
+
+
+
+
+
+
+
+                    	</div>
+						<div class="gray_line1 clear2">
+							<div class="search_btnset fr">
+								<ul>
+									<li style="vertical-align: text-top;">
+										<a href="#plus"  class="plus" ><img title="Larger" style="vertical-align: text-top;" alt="Larger" src="/JSP/image/button/btn_zoomin.gif"  /></a>
+									</li>
+									<li class="btn_mr2">
+										<a href="#minus" class="minus"><img title="Smaller" style="vertical-align: text-top;" alt="Smaller" src="/JSP/image/button/btn_zoomout.gif" /></a>
+									</li>
+									<li>
+
+
+
+
+										<select name="blockCount" id="blockCount" class="manyLang6 blockCountFont6" style="height:26px;width:160px;font-size: 13px;">
+											<option value="10"  selected>View 10 per page</option>
+		                                    <option value="20"  >View 20 per page</option>
+		                                    <option value="30"  >View 30 per page</option>
+		                                    <option value="50"  >View 50 per page</option>
+		                                    <option value="100" >View 100 per page</option>
+										</select>
+
+
+
+
+
+										<a class="goBtn btn_search manyLang6 searchBtnFont6" href="javascript:searchPaging(1);">Apply</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
 					    <!-- search_list -->
 					    <ul class="search_list printArea">
 
 
 
-							<div class="keyboardLayerPosition search_tit manyLang6 transFont6" style="width:100%;padding-left:0px;">
-	                    	No result for "<strong class="checkKeyword keywordFont6">no results</strong>".
-	                        </div>
+							<li id="article0">
+								<p>
+									<a href="javascript:checkSubmit('15990','Y');" style="color:#0054FF;text-decoration:underline;" title="Advanced View"><strong>감추다</strong></a>
+
+
+									<em style="margin-right: 0px;">
+			       						동사
+									</em>
+									<em class="manyLang6" style="margin-right: 0px;">
+
+
+
+
+
+
+											Verb
+
+
+
+
+
+
+
+
+
+
+
+
+									</em>
+
+									[감추다<img src="/JSP/image/icon/ico_sound_kr.png" alt="" title="" onclick="var mySound = soundManager.createSound({url:'http://dicmedia.korean.go.kr:8899/multimedia/multimedia_files/convert/20170223/442896/SND000020747.mp3'});mySound.play();" style="cursor: pointer;"/>]
+
+									<span class="score_2" title="Intermediate level" style="margin-left: -3px;"></span>
+
+	                        		<a href="javascript:checkSubmit('15990','Y');" class="allview6 manyLang6" style="padding-top:2px;color:#4e4e4e;">View All </a>
+								</p>
+								<ol>
+
+
+
+									<li>
+
+
+
+
+										<p class="manyLang6 theme1 " style="line-height: 30px;">
+
+											<strong>1.</strong>
+
+
+
+											<font class="transFont6">hide; cover; conceal</font>
+
+
+
+										</p>
+
+
+										<p class="sub_p1">보거나 찾지 못하도록 가리거나 숨기다.</p>
+
+
+
+										<p class="defFont6 sub_p1 manyLang6">To cover or hide something so it cannot be seen and found.</p>
+
+
+
+
+
+
+
+									</li>
+
+
+
+
+
+
+
+									<li>
+
+
+
+
+
+
+										<p class="manyLang6 theme1 " style="line-height: 30px;">
+
+											<strong>2.</strong>
+
+
+
+											<font class="transFont6">hide; conceal</font>
+
+
+
+										</p>
+
+
+										<p class="sub_p1">어떤 사실이나 감정을 남이 모르도록 알리지 않고 비밀로 하다.</p>
+
+
+
+										<p class="defFont6 sub_p1 manyLang6">To keep a certain fact or emotion secret from someone.</p>
+
+
+
+
+
+									</li>
+
+
+
+
+
+								</ol>
+							</li>
+
+
+
+
+
+
+
 
 						</ul>
 						<ul class="paging" style="line-height:27px;">
+							<li class="now"><a href="#">1</a></li>
 
 						</ul>
 					</div>
@@ -1639,4 +1816,4 @@ $(function() {
 <noscript><img alt="Logger Script" width="1" height="1" src="http://ssl.logger.co.kr/tracker.tsp?u=53239&amp;js=N" /></noscript>
 <!-- END OF LOGGER TRACKING SCRIPT -->
 </body>
-</html>`
+</html>
