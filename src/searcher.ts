@@ -2,7 +2,7 @@ import axios from 'axios'
 import * as makeDebug from 'debug'
 
 const debug = makeDebug('seonbi-core:searcher')
-export default (term: string, maxNumHits: number = 10): Promise<string> => {
+export default (term: string): Promise<string> => {
   debug(`Querying for ${term}`)
   return axios
     .get('https://krdict.korean.go.kr/eng/dicSearch/search', {
@@ -12,7 +12,7 @@ export default (term: string, maxNumHits: number = 10): Promise<string> => {
         nation: 'eng',
         wordMatchFlag: 'N',
         mainSearchWord: term,
-        blockCount: maxNumHits,
+        blockCount: 10,
       },
     })
     .then(response => {
