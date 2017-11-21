@@ -1,6 +1,6 @@
-import search from './searcher'
-import scrape, { Result } from './scraper'
-import transform, { Options } from './transformer'
+import { search } from './searcher'
+import { scrape, Result } from './scraper'
+import { transform, Options } from './transformer'
 
 export default async function seonbi(query: string, options: Options = {}): Promise<Result[]> {
   const stringResponse = await search(query)
@@ -9,5 +9,6 @@ export default async function seonbi(query: string, options: Options = {}): Prom
   return transformed
 }
 
+export { transform } from './transformer'
 export { Result, Meaning } from './scraper'
 export { Options } from './transformer'

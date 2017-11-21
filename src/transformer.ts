@@ -5,11 +5,7 @@ export interface Options {
   matchExactly?: boolean
 }
 
-export default function transform(
-  query: string,
-  results: Result[],
-  options: Options
-): Promise<Result[]> {
+export function transform(query: string, results: Result[], options: Options): Promise<Result[]> {
   let transformed = results
 
   if (options.matchExactly) {

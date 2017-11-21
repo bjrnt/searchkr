@@ -1,4 +1,4 @@
-import scrape from '../src/scraper'
+import { scrape } from '../src/scraper'
 import * as fs from 'fs'
 
 const hanjaBody = fs.readFileSync('test/test-pages/hanja.txt').toString()

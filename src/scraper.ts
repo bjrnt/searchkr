@@ -52,7 +52,7 @@ const getEn = ($: Cheerio): string =>
     .first()
     .text()
 
-export default function scrape(body: string): Result[] {
+export function scrape(body: string): Result[] {
   debug('Parsing body')
   const $ = cheerio.load(body, {
     normalizeWhitespace: true,
