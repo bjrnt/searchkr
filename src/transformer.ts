@@ -1,4 +1,5 @@
 import { Result } from './scraper'
+import { isKorean } from './utils'
 
 export interface Options {
   maximumMatches?: number
@@ -8,8 +9,13 @@ export interface Options {
 export function transform(query: string, results: Result[], options: Options): Promise<Result[]> {
   let transformed = results
 
-  if (options.matchExactly) {
-    transformed = transformed.filter(result => result.word === query)
+  // Only do exact matches for queries in Korean
+  if (options.matchExactly && isKorean(query)) {
+    transformed = transformed.filter(
+      result =>
+        // Allow ~되다 ~하다 to be matched as well
+        result.word === query || result.word + '하다' === query || result.word + '되다' === query
+    )
   }
 
   if (options.maximumMatches) {
