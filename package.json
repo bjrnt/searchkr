@@ -17,10 +17,10 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "dependencies": {
-    "axios": "^0.16.2",
-    "chalk": "^2.0.1",
+    "axios": "^0.18.0",
+    "chalk": "^2.4.2",
     "cheerio": "^1.0.0-rc.2",
-    "commander": "^2.11.0",
+    "commander": "^2.19.0",
     "debug": "^2.6.8"
   },
   "devDependencies": {
